@@ -23,7 +23,6 @@ class LocationUtils(val context: Context) {
         LocationServices.getFusedLocationProviderClient(context)
 
     @SuppressLint("MissingPermission")
-
     fun requestLocationUpdates(viewModel: LocationViewModel) {
         val locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult) {

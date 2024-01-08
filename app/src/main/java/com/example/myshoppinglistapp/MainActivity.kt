@@ -47,7 +47,7 @@ fun Navigation() {
                 viewModel = viewModel,
                 navController = navController,
                 context = context,
-                address = viewModel.address.value.firstOrNull()?.formattedAddress ?: "No Address"
+                address = viewModel.address.value.firstOrNull()?.formatted_address ?: "No Address"
             )
         }
 
