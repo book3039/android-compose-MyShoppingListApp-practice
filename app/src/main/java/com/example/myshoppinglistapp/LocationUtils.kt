@@ -17,11 +17,12 @@ import com.google.android.gms.location.Priority
 import com.google.android.gms.maps.model.LatLng
 import java.util.Locale
 
-@SuppressLint("MissingPermission")
 class LocationUtils(val context: Context) {
 
     private val _fusedLocationClient: FusedLocationProviderClient =
         LocationServices.getFusedLocationProviderClient(context)
+
+    @SuppressLint("MissingPermission")
 
     fun requestLocationUpdates(viewModel: LocationViewModel) {
         val locationCallback = object : LocationCallback() {

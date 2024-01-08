@@ -51,7 +51,7 @@ fun Navigation() {
             )
         }
 
-        dialog("locationsscreen") { backstack ->
+        dialog("locationscreen") { backstack ->
             viewModel.location.value?.let { it1 ->
                 LocationSelectionScreen(location = it1, onLocationSelected = {
                     locationData ->
